@@ -8,6 +8,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
   const pathname = usePathname();
   const { replace } = useRouter();
 
+  //TODO: Explicar este codigo porque puede ser reutilizable
   const handleSearch = (term: string) => {
     const params = new URLSearchParams(searchParams);
     if (term){
